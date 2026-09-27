@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wispersofthepastprints-prog.github.io/sitemap.xml
