@@ -219,7 +219,7 @@
   .article-inner li { margin-bottom: 12px; padding-left: 6px; }
   .article-inner li::marker { color: var(--gold); }
   .article-inner strong { color: var(--ink); font-weight: 600; }
-  .article-nav { max-width: 720px; margin: 0 auto; padding: 32px 0 10px; border-top: 1px solid rgba(43,43,43,.1); display: flex; justify-content: space-between; gap: 24px; }
+  .article-nav { position: static; z-index: auto; max-width: 720px; margin: 0 auto; padding: 32px 0 10px; background: transparent; backdrop-filter: none; border-top: 1px solid rgba(43,43,43,.1); border-bottom: none; display: flex; justify-content: space-between; gap: 24px; }
   .article-nav a { color: var(--fog); text-decoration: none; font-size: 14px; transition: color .2s; }
   .article-nav a:hover { color: var(--gold); }
 
