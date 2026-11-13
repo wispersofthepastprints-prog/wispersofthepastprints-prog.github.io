@@ -1,6 +1,14 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 document.querySelectorAll('.nav-links a').forEach(a =>
   a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+
+document.querySelectorAll('a[href*="play.google.com/store/apps/details?id=com.wispersofthepast.ivoryos"]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+      window.goatcounter.count({
+        path: 'outbound/ivoryos-google-play',
+        title: `IvoryOS Google Play — ${window.location.pathname}`,
+        event: true,
+      });
+    }
+  });
+});

@@ -139,9 +139,8 @@
   .footer-col a:hover { color: var(--gold); }
   .footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 24px; font-size: 13px; color: var(--fog); }
 
-  /* ---------- Reveal ---------- */
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
-  .reveal.visible { opacity: 1; transform: none; }
+  /* Content remains visible without JavaScript or scroll-triggered rendering. */
+  .reveal { opacity: 1; transform: none; }
 
   @media (max-width: 720px) {
     .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--ivory); flex-direction: column; align-items: flex-start; padding: 18px 24px 24px; gap: 16px; border-bottom: 1px solid rgba(43,43,43,.08); }
@@ -177,6 +176,7 @@
   .faq summary { font-weight: 600; cursor: pointer; color: var(--ink); }
   .faq p { color: var(--fog); font-size: 14.5px; margin-top: 10px; }
   .contact-card { max-width: 640px; margin: 0 auto; background: var(--card); border: 1px solid rgba(43,43,43,.08); border-radius: 24px; padding: 48px 40px; text-align: center; }
+  .contact-card .btn { max-width: 100%; overflow-wrap: anywhere; }
   .crumb { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
   .crumb a { color: var(--fog); text-decoration: none; font-size: 13px; }
   .crumb a:hover { color: var(--gold); }
